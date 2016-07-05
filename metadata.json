@@ -1,0 +1,15 @@
+{
+  "name": "bitswarmlabs/bsl_secrets",
+  "version": "0.1.0",
+  "author": "bitswarmlabs",
+  "summary": "Management of Bitswarm's secrets",
+  "license": "MIT",
+  "source": "https://github.com/bitswarmlabs/puppet-bsl_secrets",
+  "project_page": "https://github.com/bitswarmlabs/puppet-bsl_secrets",
+  "issues_url": "https://github.com/bitswarmlabs/puppet-bsl_secrets/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
