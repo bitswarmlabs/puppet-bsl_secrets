@@ -43,6 +43,17 @@
 # Copyright 2016 Your name here, unless otherwise noted.
 #
 class bsl_secrets {
+  $config_file                 = $bsl_secrets::params::credstash_config_file,
+  $aws_region                  = $bsl_secrets::params::credstash_region,
+  $aws_dynamodb_table          = $bsl_secrets::params::credstash_dynamodb_table,
+  $aws_kms_encryption_contexts = $bsl_secrets::params::credstash_encryption_contexts,
+) inherits bsl_secrets::params {
+  class { '::credstash': }
 
+  validate_hash($aws_kms_encryption_contexts)
 
+  file { $config_file:
+    ensure => file,
+    content => template('bsl_core/puppet-credstash.yaml.erb')
+  }
 }
