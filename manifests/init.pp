@@ -42,7 +42,7 @@
 #
 # Copyright 2016 Your name here, unless otherwise noted.
 #
-class bsl_secrets {
+class bsl_secrets (
   $config_file                 = $bsl_secrets::params::credstash_config_file,
   $aws_region                  = $bsl_secrets::params::credstash_region,
   $aws_dynamodb_table          = $bsl_secrets::params::credstash_dynamodb_table,

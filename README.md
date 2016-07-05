@@ -1,5 +1,7 @@
 # bsl_secrets
 
+Management of secrets using Credstash, AWS KMS, and DynamoDB.
+
 #### Table of Contents
 
 1. [Description](#description)
