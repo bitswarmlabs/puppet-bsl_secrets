@@ -35,12 +35,12 @@
 # Authors
 # -------
 #
-# Author Name <author@domain.com>
+# Reuben Avery <ravery@bitswarm.io>
 #
 # Copyright
 # ---------
 #
-# Copyright 2016 Your name here, unless otherwise noted.
+# Copyright 2016 Bitswarm Labs Inc.
 #
 class bsl_secrets (
   $config_file                 = $bsl_secrets::params::credstash_config_file,
